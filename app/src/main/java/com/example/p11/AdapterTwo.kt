@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_screen_two.view.*
 
 
 class AdapterTwo (val paginaWeb: PaginaWeb) : RecyclerviewTwo.AdapterTwo<GetViewHolder>(){
@@ -19,6 +20,8 @@ class AdapterTwo (val paginaWeb: PaginaWeb) : RecyclerviewTwo.AdapterTwo<GetView
 
     override fun onBindViewHolder(holder: GetViewHolder,position: Int){
         val items = paginaWeb.items.get(position)
+        holder.view.autor_Name2.text = items.name
+        holder.view.nome_Completo2.text = items.full_name
     }
 
     override fun getItemcoun(): Int {
