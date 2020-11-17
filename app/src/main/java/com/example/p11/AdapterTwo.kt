@@ -11,7 +11,16 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_screen_two.view.*
 
 
-class AdapterTwo (val paginaWeb: PaginaWeb) : RecyclerviewTwo.AdapterTwo<GetViewHolder>(){
+class AdapterTwo (val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GetViewHolder {
+
+    }
+
+    override fun onBindViewHolder(holder: GetViewHolder, position: Int) {
+    }
+
+    override fun getItemCount(): Int {
+    }
 
 
 }
