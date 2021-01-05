@@ -5,9 +5,14 @@ class PaginaWeb(val items: List<Items>)
 class Items(val name: String,
             val full_name: String,
             val forks_count: Int,
-            val owner: Owner,
             val id: Int,
-            val node_id: String)
+            val node_id: String,
+
+            val labels_url: String,
+            val pulls_url: String,
+
+//outra classe dentro de itens - Owner
+            val owner: Owner)
 
 class Owner(val avatar_url: String,
             val stargazers_count: Int)

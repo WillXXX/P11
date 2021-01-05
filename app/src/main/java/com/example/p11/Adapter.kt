@@ -28,8 +28,10 @@ class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>(){
         holder.view.autor_Name.text = items.name
         holder.view.nome_Completo.text = items.full_name
         holder.view.f_Count.text = items.forks_count.toString()
+//contador de estrelas
         holder.view.starCount.text = items.owner.stargazers_count.toString()
 
+//button_imageAvatar + picasso
         val ownerProfileImageButton = holder.view.button_imageAvatar
         Picasso.get().load(items.owner.avatar_url).into(ownerProfileImageButton)
     }
