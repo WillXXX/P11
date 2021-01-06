@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-//        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(this)
 //          rv_main.adapter =
 
         BuscarJson()
