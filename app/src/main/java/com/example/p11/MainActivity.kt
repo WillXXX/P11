@@ -16,12 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 //        button_imageAvatar.setOnClickListener {
-//            val intent = Intent(this, ScreenOne::class.java)
+//            val intent = Intent(this, ScreenTwo::class.java)
 //            startActivity(intent)
 //        }
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-//          rv_main.adapter =
+
 
         BuscarJson()
     }
