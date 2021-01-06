@@ -6,7 +6,9 @@ class Items(val name: String,
             val full_name: String,
             val forks_count: Int,
             val id: Int,
-            val node_id: String,
+            val html_url: String,
+            val stargazers_count: Int,
+            val description: String,
 
             val labels_url: String,
             val pulls_url: String,
@@ -15,4 +17,4 @@ class Items(val name: String,
             val owner: Owner)
 
 class Owner(val avatar_url: String,
-            val stargazers_count: Int)
+            val login: String)

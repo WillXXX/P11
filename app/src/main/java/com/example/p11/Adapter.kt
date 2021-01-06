@@ -23,13 +23,13 @@ class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>(){
     //fazendo ligações entre screenOne e MainAdapter
     override fun onBindViewHolder(holder: GetViewHolder, position: Int) {
         val items = paginaWeb.items.get(position)
-        holder.view.nomeReposit.text = items.id.toString()
-        holder.view.descReposit.text = items.node_id
+        holder.view.nomeReposit.text = items.owner.login
+        holder.view.deskReposit.text = items.description
         holder.view.autor_Name.text = items.name
         holder.view.nome_Completo.text = items.full_name
         holder.view.f_Count.text = items.forks_count.toString()
 //contador de estrelas
-        holder.view.starCount.text = items.owner.stargazers_count.toString()
+        holder.view.starCount.text = items.stargazers_count.toString()
 
 //button_imageAvatar + picasso
         val ownerProfileImageButton = holder.view.button_imageAvatar
