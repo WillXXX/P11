@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_recyclerview_two.*
 import kotlinx.android.synthetic.main.activity_screen_one.*
 import okhttp3.*
 import java.io.IOException
@@ -49,5 +50,25 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
+//        client.newCall(request).enqueue(object : Callback {
+//            override fun onFailure(call: Call, e: IOException) {
+//                println("Falha ao efetuar requisição")
+//            }
+//
+//            override fun onResponse(call: Call, response: Response) {
+//                val body = response.body()?.string()
+//                println(body)
+//
+//                val gson = GsonBuilder().create()
+//                val paginaWeb = gson.fromJson(body, PaginaWeb::class.java)
+//
+//                runOnUiThread {
+//                    recyclerViewTwo.adapter = AdapterTwo(paginaWeb)
+//                }
+//            }
+//
+//        })
+
     }
 }
