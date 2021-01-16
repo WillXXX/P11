@@ -1,6 +1,8 @@
 package com.example.p11
 
 import android.content.Intent
+import android.os.Parcel
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_screen_one.view.*
 
-class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>(){
+class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GetViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -36,6 +38,7 @@ class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>(){
         Picasso.get().load(items.owner.avatar_url).into(ownerProfileImageButton)
     }
 
+
 }
 
 class GetViewHolder(val view: View) : RecyclerView.ViewHolder(view){
@@ -45,5 +48,7 @@ class GetViewHolder(val view: View) : RecyclerView.ViewHolder(view){
             view.context.startActivity(intent)
         }
     }
+
+//
 }
 

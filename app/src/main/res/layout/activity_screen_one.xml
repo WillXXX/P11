@@ -94,7 +94,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/button_imageAvatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
