@@ -41,14 +41,14 @@ class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>() 
 
 }
 
+//A instrução para chama segunda Activity tem que ficar dentro do recyclerview, Pegando dados no Intent()
 class GetViewHolder(val view: View) : RecyclerView.ViewHolder(view){
     init{
         view.setOnClickListener {
-            val intent = Intent(view.context, MainActivity::class.java)
+            val intent = Intent(view.context, ScreenTwo::class.java)
             view.context.startActivity(intent)
         }
     }
 
-//
 }
 

@@ -16,11 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        button_imageAvatar.setOnClickListener {
-//            val intent = Intent(this, ScreenTwo::class.java)
-//            startActivity(intent)
-//        }
-
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         BuscarJson()
@@ -49,25 +44,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
-//        client.newCall(request).enqueue(object : Callback {
-//            override fun onFailure(call: Call, e: IOException) {
-//                println("Falha ao efetuar requisição")
-//            }
-//
-//            override fun onResponse(call: Call, response: Response) {
-//                val body = response.body()?.string()
-//                println(body)
-//
-//                val gson = GsonBuilder().create()
-//                val paginaWeb = gson.fromJson(body, PaginaWeb::class.java)
-//
-//                runOnUiThread {
-//                    recyclerViewTwo.adapter = AdapterTwo(paginaWeb)
-//                }
-//            }
-//
-//        })
 
     }
 }
