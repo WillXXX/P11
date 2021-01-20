@@ -26,8 +26,6 @@ class AdapterTwo (val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder
         holder.view.bodyPr.text = items.pulls_url
         holder.view.autor_Name2.text = items.name
         holder.view.nome_Completo2.text = items.full_name
-
-
     }
 
     override fun getItemCount(): Int {
