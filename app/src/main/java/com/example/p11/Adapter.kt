@@ -7,10 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.p11.Model.ModelResponse
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_screen_one.view.*
 
-class Adapter(val paginaWeb: PaginaWeb) : RecyclerView.Adapter<GetViewHolder>() {
+class Adapter(val paginaWeb: ModelResponse) : RecyclerView.Adapter<GetViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GetViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)

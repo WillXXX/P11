@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.p11.Model.ModelResponse
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recyclerview_two.*
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 println(body)
 
                 val gson = GsonBuilder().create()
-                val paginaWeb = gson.fromJson(body, PaginaWeb::class.java)
+                val paginaWeb = gson.fromJson(body, ModelResponse::class.java)
 
                 runOnUiThread {
                     recyclerView.adapter = Adapter(paginaWeb)
