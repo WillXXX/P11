@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.p11.Model.ModelResponse
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_screen_one.view.*
+import kotlinx.android.synthetic.main.activity_screen_two.view.autor_Name2
+import kotlinx.android.synthetic.main.activity_screen_two.view.nome_Completo2
+import kotlinx.android.synthetic.main.activity_screen_two.view.tituloPr
 
 class Adapter(val paginaWeb: ModelResponse) : RecyclerView.Adapter<GetViewHolder>() {
 
@@ -28,6 +31,12 @@ class Adapter(val paginaWeb: ModelResponse) : RecyclerView.Adapter<GetViewHolder
         holder.view.deskReposit.text = items.description
         holder.view.autor_Name.text = items.name
         holder.view.nome_Completo.text = items.full_name
+
+
+        holder.view.autor_Name2.text = items.name
+        holder.view.nome_Completo2.text = items.full_name
+        holder.view.tituloPr.text = items.pulls_url
+
         holder.view.f_Count.text = items.forks_count.toString()
 
 //button_imageAvatar + picasso
