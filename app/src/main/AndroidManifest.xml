@@ -13,9 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ScreenOne" />
         <activity android:name=".ScreenTwo" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
